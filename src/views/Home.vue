@@ -1,5 +1,5 @@
 <template lang="pug">
-  h1 Home Page
+  h1 Home
 </template>
 
 <script>

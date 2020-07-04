@@ -1,22 +1,24 @@
 <template lang="pug">
   #app
-    Header
-    hello
+    //Header
+    hero
+    .hello
+      vs-button(vs-type="filled") Primary
+      vs-select fdsfs
     h1 {{ movies }}
     router-view
 </template>
 
 <script>
 import store from './store/store'
-import Hello from '@/components/Hello'
+import Hero from '@/components/Hero'
 import Header from '@/components/Header'
-
 
 export default {
   name: 'App',
   components: {
-    Hello,
-    Header
+    Hero,
+    Header,
   },
   data() {
     return {
