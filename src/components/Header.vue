@@ -4,24 +4,24 @@
       .navbar
         .logo
           include ../assets/img/icon/icon-logo.svg
-        ul
-          li
+        ul.navbar__list
+          li.navbar__item
             a feed
             |
             include ../assets/img/icon/icon-feed.svg
-          li
+          li.navbar__item
             a Network
             |
             include ../assets/img/icon/icon-network.svg
-          li
+          li.navbar__item
             a jobs
             |
             include ../assets/img/icon/icon-jobs.svg
-          li
+          li.navbar__item
             a chat
             |
             include ../assets/img/icon/icon-chat.svg
-          li
+          li.navbar__item
             a notices
             |
             include ../assets/img/icon/icon-notice.svg
@@ -37,6 +37,7 @@
             include ../assets/img/icon/icon-dots.svg
     router-link(to="/") Home
     router-link(to="/dashboard") Dashboard
+    router-link(to="/drink-list") Drink List
     h1 Page Nmae
 </template>
 <script>

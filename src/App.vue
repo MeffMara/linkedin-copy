@@ -1,12 +1,13 @@
 <template lang="pug">
   #app
-    //Header
+    Header
+    router-view
     hero
     .hello
       vs-button(vs-type="filled") Primary
       vs-select fdsfs
     h1 {{ movies }}
-    router-view
+    p {{ time }}
 </template>
 
 <script>
@@ -20,11 +21,21 @@ export default {
     Hero,
     Header,
   },
+  mounted () {
+      this.getDate()
+  },
   data() {
     return {
       movies: store.movies,
+      time: ''
     };
   },
+  methods: {
+    getDate () {
+      let time = new Date()
+      this.time = time
+    }
+  }
 }
 </script>
 

@@ -1,7 +1,9 @@
 @import './mixins';
 @import './colors';
 
-@import './Font';
+//@import './Font';
+
+@import './components/Header.scss';
 
 @import './Base';
 @import './Expirement.scss';
