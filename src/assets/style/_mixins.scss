@@ -135,3 +135,34 @@
         -ms-align-self: $align;
             align-self: $align;
   }
+
+  @mixin grid($flex) {
+    @if $flex {
+        @include flex;
+    } @else {
+        display: block;
+    }
+}
+
+@mixin d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin link-text($fsize, $fweight, $uppercase: null ){
+  font-size: $fsize;
+  font-weight: $fweight;
+  text-transform: $uppercase;
+  font-style: normal;
+}
+
+
+
+//@mixin column($number) {
+//  @if $number = 12 {
+//      @include flex;
+//  } @else {
+//      display: block;
+//  }
+//}

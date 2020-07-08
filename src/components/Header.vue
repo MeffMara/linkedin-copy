@@ -10,7 +10,7 @@
             |
             include ../assets/img/icon/icon-feed.svg
           li.navbar__item
-            a Network
+            a network
             |
             include ../assets/img/icon/icon-network.svg
           li.navbar__item
@@ -31,10 +31,12 @@
             type="text"
             placeholder="Search"
             )
-        .button-menu
+        .navbar__item
           a other
-            |
-            include ../assets/img/icon/icon-dots.svg
+          |
+          include ../assets/img/icon/icon-dots.svg
+        .burger
+            
     router-link(to="/") Home
     router-link(to="/dashboard") Dashboard
     router-link(to="/drink-list") Drink List

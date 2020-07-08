@@ -7,14 +7,22 @@ header.header{
         display: grid;
         grid-template-columns: 1fr 5fr 4fr 2fr 1fr;
         &__list{
-            display: flex;
+            @include flexbox();
             list-style: none;
+            justify-content: space-around;
         }
         &__item{
-            display: flex;
+            @include flexbox();
             flex-direction: column-reverse;
             align-items: center;
             justify-content: center;
+            cursor: pointer;
+
+            a{
+                letter-spacing: 0.4px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                @include link-text(12px,600,uppercase);
+            }
         }
     }
     .logo{
