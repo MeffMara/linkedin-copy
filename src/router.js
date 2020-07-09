@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from './views/Home.vue'
-import Dashboard from './views/Dashboard.vue'
-import DrinkList from './components/DrinkList/DrinkList.vue'
+import Feed from './pages/Feed.vue'
 
 
 Vue.use(Router)
@@ -17,14 +16,9 @@ export default new Router({
             component: Home
         },
         {
-            path: '/dashboard',
-            name: 'dashboard',
-            component: Dashboard,
-        },
-        {
-            path: '/drink-list',
-            name: 'DrinkList',
-            component: DrinkList,
+            path: '/feed',
+            name: 'Feed',
+            component: Feed,
         },
     ]
 })

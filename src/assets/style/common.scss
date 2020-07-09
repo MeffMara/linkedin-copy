@@ -1,11 +1,23 @@
 @import './mixins';
+@import './Expirement.scss';
 @import './grid';
 
 @import './colors';
 
 //@import './Font';
 
+//global style
+@import './Base';
+@import './Grid';
+
+//style pages
+@import './pages/Feed.scss';
+
+
+// style components
 @import './components/Header.scss';
 
-@import './Base';
-@import './Expirement.scss';
+
+
+
+

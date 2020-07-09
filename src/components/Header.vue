@@ -6,9 +6,9 @@
           include ../assets/img/icon/icon-logo.svg
         ul.navbar__list
           li.navbar__item
-            a feed
+            router-link(to="/feed") feed
             |
-            include ../assets/img/icon/icon-feed.svg
+            img(src='../assets/img/icon/icon-feed.svg')
           li.navbar__item
             a network
             |
@@ -36,14 +36,16 @@
           |
           include ../assets/img/icon/icon-dots.svg
         .burger
-            
-    router-link(to="/") Home
-    router-link(to="/dashboard") Dashboard
-    router-link(to="/drink-list") Drink List
-    h1 Page Nmae
 </template>
 <script>
 export default {
-  name: 'Header'
-}
+  name: "Header",
+  data() {
+    return {
+        links: ["feed", "network", "jobs", "chat", "notices"],
+        itemsPath: '/img/icon/icon-'
+      
+    };
+  },
+};
 </script>
