@@ -24,7 +24,7 @@
 
 .container {
     max-width: 1180px;
-    // margin: 0 auto;
+    margin: 0 auto;
     padding: 0 15px;
   
     @include for-small {
@@ -47,4 +47,8 @@
       margin: 0 auto;
       max-width: 1140px;
     }
+  }
+
+  .col-12 {
+    width: 100%;
   }

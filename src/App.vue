@@ -2,12 +2,12 @@
   #app
     Header
     router-view
-    hero
-    .hello
-      vs-button(vs-type="filled") Primary
-      vs-select fdsfs
-    h1 {{ movies }}
-    p {{ time }}
+    //- hero
+    //- .hello
+    //-   vs-button(vs-type="filled") Primary
+    //-   vs-select fdsfs
+    //- h1 {{ movies }}
+    //- p {{ time }}
 </template>
 
 <script>

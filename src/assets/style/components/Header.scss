@@ -20,7 +20,6 @@ header.header{
 
             a{
                 letter-spacing: 0.4px;
-                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 @include link-text(12px,600,uppercase);
             }
         }
@@ -28,4 +27,11 @@ header.header{
     .logo{
         border-right: 1px solid $borders;
     }
+
+
+
+    // burger hide for big screen
+
+
+
 }

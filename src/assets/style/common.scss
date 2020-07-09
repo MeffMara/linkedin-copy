@@ -1,14 +1,16 @@
-@import './mixins';
-@import './Expirement.scss';
-@import './grid';
+@import './Base/mixins';
+@import './Base/Expirement.scss';
+@import './Base/grid';
 
-@import './colors';
+@import './Base/colors.scss';
 
 //@import './Font';
 
 //global style
-@import './Base';
-@import './Grid';
+@import './Base/Base.scss';
+@import './Base/Grid';
+@import './Base/Buttons.scss';
+
 
 //style pages
 @import './pages/Feed.scss';

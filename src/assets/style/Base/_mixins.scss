@@ -136,13 +136,6 @@
             align-self: $align;
   }
 
-  @mixin grid($flex) {
-    @if $flex {
-        @include flex;
-    } @else {
-        display: block;
-    }
-}
 
 @mixin d-flex {
   display: flex;
@@ -155,6 +148,10 @@
   font-weight: $fweight;
   text-transform: $uppercase;
   font-style: normal;
+}
+
+@mixin border($direction, $width, $style, $color) {
+  border-#{$direction}: $width $style $color;
 }
 
 
