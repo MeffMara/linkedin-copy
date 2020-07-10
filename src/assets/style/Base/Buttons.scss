@@ -72,4 +72,14 @@ button {
 			}
 		}
 	}
+
+	&.btn-connection{
+		border: 1px solid #0E6795;
+		transition: box-shadow 0.3s ease-in-out;
+
+		&:hover{
+			background: linear-gradient(#0077B5,#31a2df);
+			box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+		}
+	}
 }

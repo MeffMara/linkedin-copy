@@ -1,7 +1,8 @@
 <template lang="pug">
   #app
     Header
-    router-view
+    transition(name="fade")
+      router-view
     //- hero
     //- .hello
     //-   vs-button(vs-type="filled") Primary
@@ -41,7 +42,10 @@ export default {
 
 <style lang="scss">
 @import '@/assets/style/common.scss';
-  h1{
-    color: brown;
-  }
+ .fade-enter-active, .fade-leave-active {
+      transition: opacity .5s
+    }
+    .fade-enter, .fade-leave-active {
+      opacity: 0
+    }
 </style>

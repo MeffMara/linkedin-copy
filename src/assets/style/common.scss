@@ -13,11 +13,17 @@
 
 
 //style pages
+@import './pages/auth/Login.scss';
+@import './pages/auth/SignUp.scss';
+
+
 @import './pages/Feed.scss';
 
 
 // style components
 @import './components/Header.scss';
+@import './components/Sidebar.scss';
+
 
 
 

@@ -17,13 +17,16 @@
 							include ../assets/img/posts/posts-video.svg
 						button.send.make-it-slow
 							include ../assets/img/posts/posts-send.svg
-			.sidebar
-				h2.title Sidebar
+			sidebar
 
 </template>
 
 <script>
+import Sidebar from '../components/Sidebar.vue'
 export default {
-  name: "Feed",
+	name: "Feed",
+	components: {
+		Sidebar
+	}
 };
 </script>
