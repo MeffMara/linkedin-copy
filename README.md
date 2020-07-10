@@ -1,4 +1,4 @@
-# alcofun
+# linkedin-copy
 
 ## Project setup
 ```
