@@ -5,21 +5,40 @@
 			include ../assets/img/big-logo.svg
 		form
 			label You email
-			input(type="text" placeholder="Your Email")
+			input(type="text" v-model="email" placeholder="Your Email")
 			label you password
-			input(type="password" placeholder="Password")
-			label reapeat you password
-			input(type="password" placeholder="Password")
-			button.btn.btn-connection(type='submit') Register
-		p Thank`s what choose us! We made togather!
+			input(type="password" v-model="password" placeholder="Password")
+			button.btn.btn-connection(type='submit' @click="signUp") Sign Up
+		p Or back to
+			| 
+			router-link(to="/login") Login
 </template>
 
 <script>
+// import firebase from "firebase";
+import * as firebase from "firebase";
 export default {
   name: "SignUp",
-  // data() {
-  //   return {};
-  // },
-  // methods: {},
+  data() {
+    return {
+      email: "",
+      password: ""
+    };
+  },
+  methods: {
+    signUp: function(e) {
+	e.preventDefault();
+	firebase
+	.auth()
+	.createUserWithEmailAndPassword(this.email, this.password)
+	.then(function (user) {
+		alert("Your accont has been created!" , user);
+	},
+	function (err) {
+		alert('Oop`s ' + err.message)
+	}
+	);
+    }
+  }
 };
 </script>

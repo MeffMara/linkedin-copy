@@ -1,8 +1,13 @@
 .login {
+	height: 100vh;
 	.login-form, form {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+	}
+	.login-form{
+		height: 100%;
+
 	}
 }
